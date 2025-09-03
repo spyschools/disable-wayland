@@ -1,9 +1,12 @@
-# Disable wayland untuk kali linux Xfce
+# Remove Wayland completely from Kali Linux XFCE (so that the system only runs with X11/Xorg), the method is to remove all Wayland + XWayland + Weston packages, and remove the Wayland .desktop session.
 
-$ git clone https://github.com/spyschools/disable-wayland.git 
+$ git clone https://github.com/spyschools/remove-wayland.git 
 
-$ cd disable-wayland 
+$ cd remove-wayland
 
-$ chmod +x disable-wayland.sh
+$ chmod +x remove-wayland.sh
 
-$ sudo ./disable-wayland.sh
+$ sudo ./remove-wayland.sh
+
+*VERIFICATION
+$ echo $XDG_SESSION_TYPE
