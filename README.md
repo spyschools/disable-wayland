@@ -4,9 +4,11 @@ $ git clone https://github.com/spyschools/remove-wayland.git
 
 $ cd remove-wayland
 
-$ chmod +x remove-wayland.sh
+$ chmod +x disable-wayland.sh
 
-$ sudo ./remove-wayland.sh
+
+$ sudo ./disable-wayland.sh
+
 
 *VERIFICATION
 $ echo $XDG_SESSION_TYPE
